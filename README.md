@@ -1,2 +1,2 @@
 # cAPI
-A generic RPC client component
+A generic API client
