@@ -14,6 +14,8 @@ import org.slf4j.LoggerFactory;
 
 /**
  * A {@link Caller} implementation for http requests  
+ * This is the common Caller you will use when you 
+ * want to launch your request against a remote API
  *   
  * @author oscar.canalejo
  *

@@ -4,7 +4,7 @@
 	<artifactId>cAPI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cAPI</name>
-	<description>Generic RPC Client</description>
+	<description>Generic API Client</description>
 
 
 	<properties>
@@ -72,94 +72,14 @@
 
 	</dependencies>
 
-<!--     <build> -->
-<!--        <plugins> -->
-<!--           <plugin> -->
-<!--        	      <artifactId>maven-resources-plugin</artifactId> -->
-<!--        	      <version>2.6</version> -->
-<!--        	      <executions> -->
-<!--        		  <execution> -->
-<!--        		      <id>replace-pom-placeholder</id> -->
-<!--        		      <phase>package</phase> -->
-<!--        		      <goals> -->
-<!--        			  <goal>copy-resources</goal> -->
-<!--        		      </goals> -->
-<!--        		      <configuration> -->
-<!--        			  <resources> -->
-<!--        			      <resource> -->
-<!--        				  <directory>${basedir}</directory> -->
-<!--        				  <includes> -->
-<!--        				      <include>pom.xml</include> -->
-<!--        				  </includes> -->
-<!--        				  <filtering>true</filtering> -->
-<!--        			      </resource> -->
-<!--        			  </resources> -->
-<!--        			  <outputDirectory>${project.build.directory}/pom-install-deploy-fix</outputDirectory> -->
-<!--        		      </configuration> -->
-<!--        		  </execution> -->
-<!--        	      </executions> -->
-<!--        	  </plugin> -->
-
-<!--        	  <plugin> -->
-<!--        	      <artifactId>maven-install-plugin</artifactId> -->
-<!--        	      <version>2.4</version> -->
-<!--        	      <executions> -->
-<!--        	  	  <execution> -->
-<!--        	  	      <id>overwrite-pom</id> -->
-<!--        	  	      <phase>install</phase> -->
-<!--        	  	      <goals> -->
-<!--        	  		  <goal>install-file</goal> -->
-<!--        	  	      </goals> -->
-<!--        	  	      <configuration> -->
-<!--        	  		  <packaging>pom</packaging> -->
-<!--        	  		  <file>target/pom-install-deploy-fix/pom.xml</file> -->
-<!--        	  		  <pomFile>target/pom-install-deploy-fix/pom.xml</pomFile> -->
-<!--        	  	      </configuration> -->
-<!--        	  	  </execution> -->
-<!--        	      </executions> -->
-<!--        	  </plugin> -->
-
-<!--        	  <plugin> -->
-<!--        	      <artifactId>maven-deploy-plugin</artifactId> -->
-<!--        	      <version>2.7</version> -->
-<!--        	      <executions> -->
-<!--        		  <execution> -->
-<!--        		      <id>overwrite-pom</id> -->
-<!--        		      <phase>deploy</phase> -->
-<!--        		      <goals> -->
-<!--        			  <goal>deploy-file</goal> -->
-<!--        		      </goals> -->
-<!--        		      <configuration> -->
-<!--        			  <packaging>pom</packaging> -->
-<!--        			  <-packaging>jar</packaging-> -->
-<!--        			  <-file>pom.xml</file-> -->
-<!--        			  <file>target/pom-install-deploy-fix/pom.xml</file> -->
-<!--        			  <-file>${project.build.directory}/${project.name}.${project.packaging}</file-> -->
-<!--        			  <pomFile>target/pom-install-deploy-fix/pom.xml</pomFile> -->
-<!--        			  <url>${artifactory.url}</url> -->
-<!--        		      </configuration> -->
-<!--        		  </execution> -->
-<!--        	      </executions> -->
-<!--        	  </plugin> -->
-
-<!--        </plugins> -->
-
-<!--     	<resources> -->
-<!-- 	    <resource> -->
-<!-- 	        <directory>${project.basedir}/src/main/resources</directory> -->
-<!-- 		<filtering>true</filtering> -->
-<!-- 	    </resource> -->
-<!-- 	</resources> -->
-<!--     </build> -->
-
  	<!-- Javadoc Generation -->
-<!--     <reporting> -->
-<!-- 	    <plugins> -->
-<!-- 	        <plugin> -->
-<!-- 	            <groupId>org.apache.maven.plugins</groupId> -->
-<!-- 	            <artifactId>maven-javadoc-plugin</artifactId> -->
-<!-- 	        </plugin> -->
-<!-- 	    </plugins> -->
-<!-- 	</reporting> -->
+    <reporting>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-javadoc-plugin</artifactId>
+	        </plugin>
+	    </plugins>
+	</reporting>
 
 </project>

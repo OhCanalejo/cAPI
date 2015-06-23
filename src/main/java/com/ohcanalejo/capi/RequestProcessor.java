@@ -13,9 +13,10 @@ import com.ohcanalejo.capi.parser.Parser;
 
 
 /**
- * Defines the methods required to provide an integration tier with 
- * any external API
- *
+ * This is the main class of cAPI project. It represents the Facade you will work with.
+ * When you create an instance of {@link RequestProcessor}, you are also establishing 
+ * the Strategy you want to use for performing API calls.  
+ * 
  * @author oscar-canalejo
  *
  */
@@ -37,7 +38,7 @@ public class RequestProcessor<C extends Caller, P extends Parser> {
 	}
 
 	/**
-	 * Handles the request processing
+	 * the request processing
 	 * @param address defines where to call (e.g. : a URI)
 	 * @param dtoType the target class type into which the response will be decoded. It must be a subclass of {@link Handler} 
 	 * @param options a {@link Map} which encapsulates individual arguments and other staff necessary for the call

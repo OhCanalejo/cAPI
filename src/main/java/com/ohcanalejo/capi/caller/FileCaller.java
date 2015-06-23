@@ -5,9 +5,9 @@ import java.io.InputStream;
 import java.util.Map;
 
 /**
- * A {@link Caller} implementation to work against files. 
- * useful when you need to simulate or mock-up API calls, 
- * having the full control of the responses.
+ * A {@link Caller} implementation for working against files. 
+ * This caller is useful when you need to simulate (mock-ups) API calls, 
+ * and/or when you want to have the full control of the responses.
  * 
  * @author oscar.canalejo
  *
